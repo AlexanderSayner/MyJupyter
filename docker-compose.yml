@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+
+#docker exec -it redisson redis-cli -a secret
+  juputer-notebook:
+    build: ./
+    container_name: "jupyter-all-spark"
+    network_mode: "host"
+    ports:
+      - "8888:8888"
+    restart: always
+    command: jupyter notebook
