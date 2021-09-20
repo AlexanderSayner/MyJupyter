@@ -7,3 +7,5 @@ RUN pip install -U scikit-fuzzy
 RUN pip install -U deap
 RUN pip install -U scoop
 RUN pip install -U torch torchvision
+RUN pip install -U tensorflow-gpu
+
